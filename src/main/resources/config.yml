@@ -1,0 +1,9 @@
+server:
+  applicationConnectors:
+   - type: http
+     port: <%= node['port'] %>
+  adminConnectors:
+   - type: http
+     port: <%= node['admin_port'] %>
+
+greetingTemplate: Hello, %s!
