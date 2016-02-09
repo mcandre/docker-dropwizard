@@ -29,7 +29,10 @@ clean: clean-containers clean-images clean-layers
 foodcritic:
 	foodcritic cookbook/
 
-lint: foodcritic
+dockerlint:
+	$(shell npm bin)/dockerlint
+
+lint: foodcritic dockerlint
 
 publish:
 	docker push $(IMAGE)

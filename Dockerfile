@@ -9,4 +9,4 @@ RUN git config --global user.name name && \
 RUN knife cookbook site install -z java && \
     chef-client -z --runlist 'recipe[cookbook]'
 EXPOSE 27017
-ENTRYPOINT java -jar /docker-dropwizard-all.jar server /etc/dropwizard.yml
+ENTRYPOINT ["java", "-jar", "/docker-dropwizard-all.jar", "server", "/etc/dropwizard.yml"]

@@ -4,6 +4,8 @@
 #
 # Copyright (c) 2015 Andrew Pennebaker
 
+include_recipe 'apt'
+
 include_recipe 'java'
 
 template '/etc/dropwizard.yml' do
