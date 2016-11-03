@@ -7,6 +7,5 @@
 # rm .envrc
 
 source_up
-source "$HOME/.bashrc.d/direnv/docker-machine.sh"
 source "$HOME/.bashrc.d/direnv/chruby.sh"
 source "$HOME/.bashrc.d/direnv/ndenv.sh"
